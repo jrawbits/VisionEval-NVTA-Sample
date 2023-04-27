@@ -1,0 +1,71 @@
+---
+title: "VE-RSPM DVMT Calculations"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Trace DVMT calcs for NVTA model
+
+```{r start}
+# Assumes launching this from a location where a completed VERSPM model exists.
+# Here using the Northern Virginia Tranposrtaiton Authority (NVTA) model as the example
+
+rs <- openModel('VERSPM_NVTA')
+# rs$run() # do this only once. Afterwards, can just openModel and then initializeModel to get the previous model available
+
+# View VMT and characteristics for a single household
+
+rs$tables = 'Household'
+rs$groups = '2019'
+hh_table <- rs$extract(saveTo = F)
+hh_table <- hh_table[[1]] # from list of one data frame to a data frame
+```
+
+
+# Look at characteristics
+
+# Model 1: Probability of travel, metropolitan model
+
+Inputs: 
+
+- `Drivers` - number of drivers in the household
+- `LogInc` - natural log of annual household income ($2001)
+- `Hbppopdn` - density (pop/sq mi) of the census block group
+- `NumVeh` - number of vehicles owned or leased by the household
+- `ZeroVeh` - dummy variable identifying whether the household has no vehicles
+- `Workers` - number of workers in the household
+- `BusEqRevMiPC` - urbanized area per capita bus-equivalent transit revenue miles
+- `UrbanDev` - whether the block group is characterized by urban mixed-use development
+
+```{r model_1_values}
+
+
+```
+
+
+# Model 2: Power-transformed travel day DVMT
+
+Metropolitan power transform: 0.24
+
+
+- `Drivers` - number of drivers in the household
+- `LogIncome` - natural log of annual household income ($2001)
+- `Hbppopdn` - density (pop/sq mi) of the census block group
+- `NumVeh` - number of vehicles owned or leased by the household
+- `ZeroVeh` - dummy variable identifying whether the household has no vehicles
+- `OneVeh` - dummy variable identifying whether the household has only one vehicle
+- `Workers` - number of workers in the household
+- `Age0to14` - number of persons in the 0 - 14 age group in the 
+- `UrbanDev` - whether the block group is urban mixed-use
+- `FwyLaneMiPC` - ratio of freeway lane miles to urbanized area population
+
+Run for 1000 times for each household in the estimation data set
+
+# Model 3: Simulated average DVMT
+
+# Trace DVMT Calcs
+
+https://github.com/visioneval/VisionEval/blob/master/sources/modules/VEHouseholdTravel/inst/module_docs/CalculateHouseholdDvmt.md

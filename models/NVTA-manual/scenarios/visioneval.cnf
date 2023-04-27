@@ -1,0 +1,52 @@
+Notes:
+  - Sample scenarios from VDOT
+  - Settings ahead of ModelStages apply to all stages
+
+StartFrom    : "NVTA-base-year"
+BaseScenario : "NVTA-future-year"
+
+ModelStages:
+   "verspm_nvta_a2":
+     Dir          : VERSPM_NVTA_A2
+     Scenario     : VERSPM_NVTA_A2
+     Description  : VERSPM_NVTA_A2
+   "verspm_nvta_a3":
+     Dir          : VERSPM_NVTA_A3
+     Scenario     : VERSPM_NVTA_A3
+     Description  : VERSPM_NVTA_A3
+   "verspm_nvta_a4":
+     Dir          : VERSPM_NVTA_A4
+     Scenario     : VERSPM_NVTA_A4
+     Description  : VERSPM_NVTA_A4
+   "verspm_nvta_c01":
+     Dir          : verspm_nvta_c01
+     Scenario     : verspm_nvta_c01
+     Description  : verspm_nvta_c01
+   "verspm_nvta_c02":
+     Dir          : verspm_nvta_c02
+     Scenario     : verspm_nvta_c02
+     Description  : verspm_nvta_c02
+   "verspm_nvta_c03":
+     Dir          : verspm_nvta_c03
+     Scenario     : verspm_nvta_c03
+     Description  : verspm_nvta_c03
+   "verspm_nvta_c2":
+     Dir          : verspm_nvta_c2
+     Scenario     : verspm_nvta_c2
+     Description  : verspm_nvta_c2
+   "verspm_nvta_c3":
+     Dir          : verspm_nvta_c3
+     Scenario     : verspm_nvta_c3
+     Description  : verspm_nvta_c3
+   "verspm_nvta_c4":
+     Dir          : verspm_nvta_c4
+     Scenario     : verspm_nvta_c4
+     Description  : verspm_nvta_c4
+   "verspm_nvta_c05":
+     Dir          : verspm_nvta_c05
+     Scenario     : verspm_nvta_c05
+     Description  : verspm_nvta_c05
+   "verspm_nvta_c06":
+     Dir          : verspm_nvta_c06
+     Scenario     : verspm_nvta_c06
+     Description  : verspm_nvta_c06

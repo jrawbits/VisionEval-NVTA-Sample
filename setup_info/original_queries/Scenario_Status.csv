@@ -1,0 +1,29 @@
+name,files,location,status
+VERSPM_NVTA,base,,
+VERSPM_NVTA_A2,bzone_dwelling_units.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_A2,Not Run
+VERSPM_NVTA_A3,,,
+VERSPM_NVTA_A4,,,
+VERSPM_NVTA_C2,"azone_gq_pop_by_age.csv, azone_hh_pop_by_age.csv, bzone_dwelling_units.csv",C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_C2,Not Run
+VERSPM_NVTA_C3,,,
+VERSPM_NVTA_C4,,,
+VERSPM_NVTA_E2,region_carsvc_powertrain_prop.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_E2,Not Run
+VERSPM_NVTA_F2,marea_transit_powertrain_prop.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_F2,Not Run
+VERSPM_NVTA_G2,region_ave_fuel_carbon_intensity.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_G2,Not Run
+VERSPM_NVTA_G3,region_ave_fuel_carbon_intensity.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_G3,Not Run
+VERSPM_NVTA_H2,region_hvytrk_powertrain_prop.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_H2,Not Run
+VERSPM_NVTA_I2,azone_electricity_carbon_intensity.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_I2,Not Run
+VERSPM_NVTA_J2,bzone_travel_demand_mgt.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_J2,Not Run
+VERSPM_NVTA_K2,azone_relative_employment.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_K2,Not Run
+VERSPM_NVTA_L2,"azone_hh_pop_by_age.csv, azone_hhsize_targets.csv",C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_L2,Not Run
+VERSPM_NVTA_L3,"azone_hh_pop_by_age.csv, azone_hhsize_targets.csv",C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_L3,Not Run
+VERSPM_NVTA_M2,"azone_hh_pop_by_age.csv, azone_hhsize_targets.csv",C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_M2,Not Run
+VERSPM_NVTA_M3,"azone_hh_pop_by_age.csv, azone_hhsize_targets.csv",C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_M3,Not Run
+VERSPM_NVTA_N2,azone_veh_use_taxes.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_N2,Not Run
+VERSPM_NVTA_O2,azone_veh_use_taxes.csv,C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_O2,Not Run
+VERSPM_NVTA_P2,"azone_veh_use_taxes.csv, marea_transit_service.csv",C:/Users/Daniel.Flynn/Desktop/VE_4-1-0/models/VERSPM_NVTA_P2,Not Run
+VERSPM_NVTA_C01,,,
+VERSPM_NVTA_C02,,,
+VERSPM_NVTA_C03,,,
+VERSPM_NVTA_C04,,,
+VERSPM_NVTA_C05,,,
+VERSPM_NVTA_C06,,,

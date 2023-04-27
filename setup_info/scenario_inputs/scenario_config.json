@@ -1,0 +1,297 @@
+[
+  {
+    "NAME": "A",
+    "LABEL": "Bzone Population and Employment growth",
+    "DESCRIPTION": "High growth in selected Bzones",
+    "INSTRUCTIONS": "Keep all three Azone households constant.  For Bzones, compute growth (2045-2019) households (bzone_dwelling_units.csv).  Move some household growth from east to west such that, at the Bzone level, the average percent difference from baseline values is 48%.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Current household growth"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "High population growth",
+        "DESCRIPTION": "Higher household growth in selected bzones with average percent difference from baseline of 48%"
+      },
+	  {
+        "NAME": "3",
+        "LABEL": "High Employment growth",
+        "DESCRIPTION": "Higher employment growth in selected bzones with average percent difference from baseline of 136%"
+      },
+	  {
+        "NAME": "4",
+        "LABEL": "High population and employment growth",
+        "DESCRIPTION": "Combination of high population and high employment growth"
+      },	  
+    ]
+  },
+  {
+    "NAME": "C",
+    "LABEL": "2a. Azone population growth",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase growth in Azone population by 10% and corresponding Bzone households by 10%.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "High growth",
+        "DESCRIPTION": "Higher Azone population growth of 10%"
+      }
+    ]
+  },
+  {
+    "NAME": "D",
+    "LABEL": "2b. Azone employment growth",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase growth in employment by 12% (must do this for all Bzones uniformly).",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "High growth",
+        "DESCRIPTION": "Higher employment growth of 10%"
+      }
+    ]
+  },
+  {
+    "NAME": "E",
+    "LABEL": "10a. Reducing transportation emissions",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase the proportion of hybrid cars and light trucks to simulate electric AVs",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "High growth",
+        "DESCRIPTION": "Higher proportion of hybrid cars and light trucks"
+      }
+    ]
+  },
+  {
+    "NAME": "F",
+    "LABEL": "10b. Reducing transportation emissions",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase the proportion of hybrid buses and paratransit vans.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "High growth",
+        "DESCRIPTION": "Higher proportion of hybrid cars and light trucks"
+      }
+    ]
+  },
+  {
+    "NAME": "G",
+    "LABEL": "10c. Reducing transportation emissions",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Decrease carbon intensity of fuel",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "NAs",
+        "DESCRIPTION": "All NAs"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "Base",
+        "DESCRIPTION": "Keeping same as base year"
+      },
+      {
+        "NAME": "3",
+        "LABEL": "Higher Efficiency",
+        "DESCRIPTION": "Carbon intensity decreases in future year"
+      }
+    ]
+  },
+  {
+    "NAME": "H",
+    "LABEL": "10d. Reducing transportation emissions",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase the proportion of hybrid heavy trucks",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "High growth",
+        "DESCRIPTION": "Higher employment growth of 10%"
+      }
+    ]
+  },
+  {
+    "NAME": "I",
+    "LABEL": "10e. Reducing transportation emissions",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Decrease carbon intensity at point of consumption",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "High growth",
+        "DESCRIPTION": "Decreased carbon intensity"
+      }
+    ]
+  },
+  {
+    "NAME": "J",
+    "LABEL": "3a. Telecommuting",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase Telecommuting by increasing EcoProp to 1.25%.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "High growth",
+        "DESCRIPTION": "Increase EcoProp to 1.25%"
+      }
+    ]
+  },
+  {
+    "NAME": "K",
+    "LABEL": "3c. Telecommuting",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Decrease the number of workers to reflect increased telework",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "Low growth",
+        "DESCRIPTION": "Lower number of owrkers"
+      }
+    ]
+  },
+  {
+    "NAME": "L",
+    "LABEL": "4a. Alter household size",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Simulate larger and smaller household sizes in future year.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "Larger household size",
+        "DESCRIPTION": "Increase average hh size, decrease one-person hhs, decrease number of children"
+      },
+      {
+        "NAME": "3",
+        "LABEL": "Smaller household size",
+        "DESCRIPTION": "Decrease average hh size, increase one-person hhs, increase number of children"
+      }
+    ]
+  },
+  {
+    "NAME": "M",
+    "LABEL": "4b. Aging in place",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase the older adult population",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "More aging in place",
+        "DESCRIPTION": "Higher number of older adults, higher proportion of 1-person hhs"
+      },
+      {
+        "NAME": "3",
+        "LABEL": "Less aging in place",
+        "DESCRIPTION": "Lower number of older adults, lower proportion of 1-person hhs"
+      }
+    ]
+  },
+  {
+    "NAME": "N",
+    "LABEL": "5a. Transit",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase the fuel tax",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "Higher fuel tax",
+        "DESCRIPTION": "Increase fuel tax"
+      }
+    ]
+  },
+  {
+    "NAME": "O",
+    "LABEL": "5b. Transit",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase fuel tax and add tax for electric vehicles",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "Higher taxes",
+        "DESCRIPTION": "Increase fuel tax and add tax for electric vehicles"
+      }
+    ]
+  },
+  {
+    "NAME": "P",
+    "LABEL": "5c. Transit",
+    "DESCRIPTION": "",
+    "INSTRUCTIONS": "Increase fuel tax and add tax for electric vehicles, then increase transit supply",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "LABEL": "Base",
+        "DESCRIPTION": "Existing level"
+      },
+      {
+        "NAME": "2",
+        "LABEL": "Higher taxes and transit growth",
+        "DESCRIPTION": "Increased fuel tax, tax for electric vehicles, transit supply"
+      }
+    ]
+  }
+]

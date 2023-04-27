@@ -1,0 +1,424 @@
+[
+  {
+    "NAME": "1. Bzone Population and Employment growth growth",
+    "DESCRIPTION": "A: Growth of population at the TAZ level with more growth in western areas. B: Higher growth of employment at the TAZ level with more growth in the western areas.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "A",
+            "LEVEL": "1"
+          },
+		  {
+		    "NAME": "B",
+			"LEVEL": "1"
+		  }
+        ]
+      },
+      {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "A",
+            "LEVEL": "2"
+          },
+		  {
+            "NAME": "B",
+            "LEVEL": "1"
+          }
+        ]
+      },
+	  {
+        "NAME": "3",
+        "INPUTS":[
+          {
+            "NAME": "A",
+            "LEVEL": "1"
+          },
+		  {
+            "NAME": "B",
+            "LEVEL": "2"
+          }
+        ]
+      },
+	  {
+        "NAME": "4",
+        "INPUTS":[
+          {
+            "NAME": "A",
+            "LEVEL": "2"
+          },
+		  {
+            "NAME": "B",
+            "LEVEL": "2"
+          }
+        ]
+      }
+	  
+    ]
+  },
+  {
+    "NAME": "2a. Azone Population growth",
+    "DESCRIPTION": "Higher growth of population at the jurisdiction level",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "C",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "C",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "2b. Azone Employment growth",
+    "DESCRIPTION": "Higher growth of employment at the jurisdiction level",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "D",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "D",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "10a. Reducing transportation emissions",
+    "DESCRIPTION": "Higher growth of employment at the jurisdiction level",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "E",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "E",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "10b. Reducing transportation emissions",
+    "DESCRIPTION": "Higher growth of employment at the jurisdiction level",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "F",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "F",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "10c. Reducing transportation emissions",
+    "DESCRIPTION": "Higher growth of employment at the jurisdiction level",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "G",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "G",
+            "LEVEL": "2"
+          }
+        ]
+      },
+	  {
+        "NAME": "3",
+        "INPUTS":[
+          {
+            "NAME": "G",
+            "LEVEL": "3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "10d. Reducing transportation emissions",
+    "DESCRIPTION": "Increase the proportion of hybrid heavy trucks",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "H",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "H",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "10e. Reducing transportation emissions",
+    "DESCRIPTION": "Decrease carbon intensity at point of consumption",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "I",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "I",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "3a. Telecommuting",
+    "DESCRIPTION": "Increase Telecommuting by increasing EcoProp to 1.25%.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "J",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "J",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "3c. Telecommuting",
+    "DESCRIPTION": "Decrease the number of workers to reflect increased telework",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "K",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "K",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "4a. Alter household size",
+    "DESCRIPTION": "Simulate larger and smaller household sizes in future year.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "L",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "L",
+            "LEVEL": "2"
+          }
+        ]
+      },
+	  {
+        "NAME": "3",
+        "INPUTS":[
+          {
+            "NAME": "L",
+            "LEVEL": "3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "4b. Aging in place",
+    "DESCRIPTION": "Increase the older adult population",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "M",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "M",
+            "LEVEL": "2"
+          }
+        ]
+      },
+	  {
+        "NAME": "3",
+        "INPUTS":[
+          {
+            "NAME": "M",
+            "LEVEL": "3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "5a. Transit",
+    "DESCRIPTION": "Increase the fuel tax",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "N",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "N",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "5b. Transit",
+    "DESCRIPTION": "Increase fuel tax and add tax for electric vehicles",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "O",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "O",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "5c. Transit",
+    "DESCRIPTION": "Increase fuel tax and add tax for electric vehicles, then increase transit supply",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "P",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "P",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,108 @@
+# To Include:
+# Marea fields - just report and summarize by Marea
+mod$tables <- 'Marea'
+mod$fields <- c('UrbanHhDvmt',
+                'TownHhDvmt',
+                'RuralHhDvmt',
+                'HvyTrkUrbanDvmt',
+                'ComSvcUrbanDvmt',
+                'ComSvcTownDvmt',
+                'ComSvcRuralDvmt',
+                'LdvTotDelay',
+                'HvyTrkDelay',
+                'BusTotDelay',
+                'ComSvcUrbanGGE',
+                'ComSvcNonUrbanGGE',
+                'HvyTrkUrbanGGE',
+                'ComSvcUrbanKWH',
+                'ComSvcNonUrbanKWH',
+                'HvyTrkUrbanKWH',
+                'ComSvcUrbanCO2e',
+                'ComSvcNonUrbanCO2e',
+                'HvyTrkUrbanCO2e',
+                'BusGGE',
+                'RailGGE',
+                'VanGGE',
+                'BusKWH',
+                'RailKWH',
+                'VanKWH',
+                'BusCO2e',
+                'RailCO2e',
+                'VanCO2e'
+  )
+
+# 
+
+QuerySpec <- list(
+  # Marea queries
+  list(
+    Name = "UrbanHhDvmt",
+    Summarize = list(
+      Expr = "sum(UrbanHhDvmt)",
+      Units = c(
+        UrbanHhDvmt = "MI/DAY",
+        Marea = ""
+      ),
+      By = "Marea",
+      Table = "Marea"
+    ),
+    Units = "Miles per day",
+    Description = "Daily vehicle miles traveled by households residing in the urban area"
+  ),
+)
+
+# First extract Marea outputs
+# Need to identify units for database item
+# Need to develop Units/Description for query 
+
+# Can we write a function to generate a query spec for a variable
+# from a table by geography? Obviously the result table
+# Then just send in the names (and a sample model stage, default
+# is first reportable). We can fill in the blanks for By, Table, Field
+# and summarize with sum (or perhaps some other function like mean?).
+
+# Internally, get the list of specs for the stage in year groups
+
+# Do an Auto-Join for non-Geography tables (Vehicles and Workers) to Households and acquire full
+#   household geography from there. So we'll pull the request field (only) from the main table, and
+#   if the table is not Household, then add the Table/Key set up (to join on HhId)
+
+# Name the queryspec after the field being summarized, and perhaps append
+# "_Marea" (the geography "By" spec)
+
+# Parameters:
+#   Group (default is year being processed)
+#   Table
+#   Field
+#   SpecName (query spec variable; defaults to paste0(Field,"_",rectified,ByGeography)
+#   Geography (cannot be smaller than Table or, if not a geography summary table, smaller than
+#     Bzone). Default is Table (if matches a geography) or Bzone if does not match geography.
+#     Automatically build the Join to Households if Table is not Household or a Geography.
+#   Function for expression (default is sum). If not sum (e.g. mean or length), prepend that
+#     to the SpecName
+#   Units (Internal unit description of the field from Datastore Spec) # No override
+#   Description (sum over <Geography> of <Field Description from Datastore Spec>) # No override
+
+
+# Later, manual editing of joins or alternate breakpoints
+
+  # Household level
+  # First clear the selections
+
+  # TODO: Also cinlude Dvmt and related
+  # Summarize at the Bzone level
+  # Develop total by Bzone
+  # Determine per capita and per household values of some of them
+
+  mod$tables <- 'Household'
+  mod$fields <- c('Bzone',
+                  'Income',
+                  'OwnCost',
+                  'WalkTrips',
+                  'VehicleTrips',
+                  'BikeTrips',
+                  'TransitTrips',
+                  'DailyGGE',
+                  'DailyKWH',
+                  'DailyCO2e')
+  

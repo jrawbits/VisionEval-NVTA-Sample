@@ -1,0 +1,98 @@
+[
+  {
+    "NAME": "Bzone Population growth",
+    "DESCRIPTION": "Growth of population at the TAZ level with more growth in western areas.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "A",
+            "LEVEL": "1"
+          }
+        ]
+      },
+      {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "A",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "Bzone Employment growth",
+    "DESCRIPTION": "Higher growth of employment at the TAZ level with more growth in the western areas.",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "B",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "B",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "Azone Population growth",
+    "DESCRIPTION": "Higher growth of population at the jurisdiction level",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "C",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "C",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NAME": "Azone Employment growth",
+    "DESCRIPTION": "Higher growth of employment at the jurisdiction level",
+    "LEVELS":[
+      {
+        "NAME": "1",
+        "INPUTS":[
+          {
+            "NAME": "D",
+            "LEVEL": "1"
+          }
+		  ]
+      },
+	  {
+        "NAME": "2",
+        "INPUTS":[
+          {
+            "NAME": "D",
+            "LEVEL": "2"
+          }
+        ]
+      }
+    ]
+  }
+]

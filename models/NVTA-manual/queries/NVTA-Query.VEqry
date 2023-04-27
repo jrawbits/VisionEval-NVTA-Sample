@@ -1,0 +1,423 @@
+QuerySpec <-
+list(
+  UrbanHhDvmt_Marea = list(
+    Name = "UrbanHhDvmt_Marea",
+    Units = "MI/DAY",
+    Description = "sum over Marea of Average daily vehicle miles traveled in autos or light trucks by households residing in the urbanized portion of the Marea",
+    Summarize = list(
+      Expr = "sum(UrbanHhDvmt)",
+      Units = c(UrbanHhDvmt = "MI/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  TownHhDvmt_Marea = list(
+    Name = "TownHhDvmt_Marea",
+    Units = "MI/DAY",
+    Description = "sum over Marea of Average daily vehicle miles traveled in autos or light trucks by households residing in town (urban but not urbanized) portion of the Marea",
+    Summarize = list(
+      Expr = "sum(TownHhDvmt)",
+      Units = c(TownHhDvmt = "MI/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  RuralHhDvmt_Marea = list(
+    Name = "RuralHhDvmt_Marea",
+    Units = "MI/DAY",
+    Description = "sum over Marea of Average daily vehicle miles traveled in autos or light trucks by households residing in the rural (non-urban) portion of the Marea",
+    Summarize = list(
+      Expr = "sum(RuralHhDvmt)",
+      Units = c(RuralHhDvmt = "MI/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  HvyTrkUrbanDvmt_Marea = list(
+    Name = "HvyTrkUrbanDvmt_Marea",
+    Units = "MI/DAY",
+    Description = "sum over Marea of Heavy truck daily vehicle miles of travel on urbanized area roadways in the Marea",
+    Summarize = list(
+      Expr = "sum(HvyTrkUrbanDvmt)",
+      Units = c(HvyTrkUrbanDvmt = "MI/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  ComSvcUrbanDvmt_Marea = list(
+    Name = "ComSvcUrbanDvmt_Marea",
+    Units = "MI/DAY",
+    Description = "sum over Marea of Commercial service daily vehicle miles of travel associated with Marea urbanized household activity",
+    Summarize = list(
+      Expr = "sum(ComSvcUrbanDvmt)",
+      Units = c(ComSvcUrbanDvmt = "MI/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  ComSvcTownDvmt_Marea = list(
+    Name = "ComSvcTownDvmt_Marea",
+    Units = "MI/DAY",
+    Description = "sum over Marea of Commercial service daily vehicle miles of travel associated with Marea town household activity",
+    Summarize = list(
+      Expr = "sum(ComSvcTownDvmt)",
+      Units = c(ComSvcTownDvmt = "MI/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  ComSvcRuralDvmt_Marea = list(
+    Name = "ComSvcRuralDvmt_Marea",
+    Units = "MI/DAY",
+    Description = "sum over Marea of Commercial service daily vehicle miles of travel associated with Marea rural household activity",
+    Summarize = list(
+      Expr = "sum(ComSvcRuralDvmt)",
+      Units = c(ComSvcRuralDvmt = "MI/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  LdvTotDelay_Marea = list(
+    Name = "LdvTotDelay_Marea",
+    Units = "HR",
+    Description = "sum over Marea of Total light-duty vehicle delay (hours per day) on urban area roads",
+    Summarize = list(
+      Expr = "sum(LdvTotDelay)",
+      Units = c(LdvTotDelay = "HR", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  HvyTrkTotDelay_Marea = list(
+    Name = "HvyTrkTotDelay_Marea",
+    Units = "HR",
+    Description = "sum over Marea of Total heavy truck vehicle delay (hours per day) on urban area roads",
+    Summarize = list(
+      Expr = "sum(HvyTrkTotDelay)",
+      Units = c(HvyTrkTotDelay = "HR", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  BusTotDelay_Marea = list(
+    Name = "BusTotDelay_Marea",
+    Units = "HR",
+    Description = "sum over Marea of Total bus vehicle delay (hours per day) on urban area roads",
+    Summarize = list(
+      Expr = "sum(BusTotDelay)",
+      Units = c(BusTotDelay = "HR", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  ComSvcUrbanGGE_Marea = list(
+    Name = "ComSvcUrbanGGE_Marea",
+    Units = "GGE/DAY",
+    Description = "sum over Marea of Average daily amount of hydrocarbon fuels consumed by commercial service vehicles associated with urban household activity in gas gallon equivalents",
+    Summarize = list(
+      Expr = "sum(ComSvcUrbanGGE)",
+      Units = c(ComSvcUrbanGGE = "GGE/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  ComSvcNonUrbanGGE_Marea = list(
+    Name = "ComSvcNonUrbanGGE_Marea",
+    Units = "GGE/DAY",
+    Description = "sum over Marea of Average daily amount of hydrocarbon fuels consumed by commercial service vehicles associated with rural and town household activity in gas gallon equivalents",
+    Summarize = list(
+      Expr = "sum(ComSvcNonUrbanGGE)",
+      Units = c(ComSvcNonUrbanGGE = "GGE/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  HvyTrkUrbanGGE_Marea = list(
+    Name = "HvyTrkUrbanGGE_Marea",
+    Units = "GGE/DAY",
+    Description = "sum over Marea of Average daily amount of hydrocarbon fuels consumed by heavy trucks on urbanized area roadways in the Marea in gas gallon equivalents",
+    Summarize = list(
+      Expr = "sum(HvyTrkUrbanGGE)",
+      Units = c(HvyTrkUrbanGGE = "GGE/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  ComSvcUrbanKWH_Marea = list(
+    Name = "ComSvcUrbanKWH_Marea",
+    Units = "KWH/DAY",
+    Description = "sum over Marea of Average daily amount of electricity consumed by commercial service vehicles associated with urban household activity in kilowatt-hours",
+    Summarize = list(
+      Expr = "sum(ComSvcUrbanKWH)",
+      Units = c(ComSvcUrbanKWH = "KWH/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  ComSvcNonUrbanKWH_Marea = list(
+    Name = "ComSvcNonUrbanKWH_Marea",
+    Units = "KWH/DAY",
+    Description = "sum over Marea of Average daily amount of electricity consumed by commercial service vehicles associated with rural and town household activity in kilowatt-hours",
+    Summarize = list(
+      Expr = "sum(ComSvcNonUrbanKWH)",
+      Units = c(ComSvcNonUrbanKWH = "KWH/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  HvyTrkUrbanKWH_Marea = list(
+    Name = "HvyTrkUrbanKWH_Marea",
+    Units = "KWH/DAY",
+    Description = "sum over Marea of Average daily amount of electricity consumed by heavy trucks on urbanized area roadways in the Marea in kilowatt-hours",
+    Summarize = list(
+      Expr = "sum(HvyTrkUrbanKWH)",
+      Units = c(HvyTrkUrbanKWH = "KWH/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  ComSvcUrbanCO2e_Marea = list(
+    Name = "ComSvcUrbanCO2e_Marea",
+    Units = "GM/DAY",
+    Description = "sum over Marea of Average daily amount of carbon-dioxide equivalents produced by commercial service vehicles associated with urban household activity in grams",
+    Summarize = list(
+      Expr = "sum(ComSvcUrbanCO2e)",
+      Units = c(ComSvcUrbanCO2e = "GM/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  ComSvcNonUrbanCO2e_Marea = list(
+    Name = "ComSvcNonUrbanCO2e_Marea",
+    Units = "GM/DAY",
+    Description = "sum over Marea of Average daily amount of carbon-dioxide equivalents produced by commercial service vehicles associated with rural and town household activity in grams",
+    Summarize = list(
+      Expr = "sum(ComSvcNonUrbanCO2e)",
+      Units = c(ComSvcNonUrbanCO2e = "GM/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  HvyTrkUrbanCO2e_Marea = list(
+    Name = "HvyTrkUrbanCO2e_Marea",
+    Units = "GM/DAY",
+    Description = "sum over Marea of Average daily amount of carbon-dioxide equivalents produced by heavy trucks on urbanized area roadways in the Marea in grams",
+    Summarize = list(
+      Expr = "sum(HvyTrkUrbanCO2e)",
+      Units = c(HvyTrkUrbanCO2e = "GM/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  BusGGE_Marea = list(
+    Name = "BusGGE_Marea",
+    Units = "GGE/DAY",
+    Description = "sum over Marea of Average daily amount of hydrocarbon fuels consumed by bus transit vehicles in urbanized area in gas gallon equivalents",
+    Summarize = list(
+      Expr = "sum(BusGGE)",
+      Units = c(BusGGE = "GGE/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  RailGGE_Marea = list(
+    Name = "RailGGE_Marea",
+    Units = "GGE/DAY",
+    Description = "sum over Marea of Average daily amount of hydrocarbon fuels consumed by rail transit vehicles in urbanized area in gas gallon equivalents",
+    Summarize = list(
+      Expr = "sum(RailGGE)",
+      Units = c(RailGGE = "GGE/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  VanGGE_Marea = list(
+    Name = "VanGGE_Marea",
+    Units = "GGE/DAY",
+    Description = "sum over Marea of Average daily amount of hydrocarbon fuels consumed by van transit vehicles in urbanized area in gas gallon equivalents",
+    Summarize = list(
+      Expr = "sum(VanGGE)",
+      Units = c(VanGGE = "GGE/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  BusKWH_Marea = list(
+    Name = "BusKWH_Marea",
+    Units = "KWH/DAY",
+    Description = "sum over Marea of Average daily amount of electricity consumed by bus transit vehicles in urbanized area in kilowatt-hours",
+    Summarize = list(
+      Expr = "sum(BusKWH)",
+      Units = c(BusKWH = "KWH/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  RailKWH_Marea = list(
+    Name = "RailKWH_Marea",
+    Units = "KWH/DAY",
+    Description = "sum over Marea of Average daily amount of electricity consumed by rail transit vehicles in urbanized area in kilowatt-hours",
+    Summarize = list(
+      Expr = "sum(RailKWH)",
+      Units = c(RailKWH = "KWH/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  VanKWH_Marea = list(
+    Name = "VanKWH_Marea",
+    Units = "KWH/DAY",
+    Description = "sum over Marea of Average daily amount of electricity consumed by van transit vehicles in urbanized area in kilowatt-hours",
+    Summarize = list(
+      Expr = "sum(VanKWH)",
+      Units = c(VanKWH = "KWH/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  BusCO2e_Marea = list(
+    Name = "BusCO2e_Marea",
+    Units = "GM/DAY",
+    Description = "sum over Marea of Average daily amount of carbon-dioxide equivalents produced by bus transit vehicles in urbanized area in grams",
+    Summarize = list(
+      Expr = "sum(BusCO2e)",
+      Units = c(BusCO2e = "GM/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  RailCO2e_Marea = list(
+    Name = "RailCO2e_Marea",
+    Units = "GM/DAY",
+    Description = "sum over Marea of Average daily amount of carbon-dioxide equivalents produced by rail transit vehicles in urbanized area in grams",
+    Summarize = list(
+      Expr = "sum(RailCO2e)",
+      Units = c(RailCO2e = "GM/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  VanCO2e_Marea = list(
+    Name = "VanCO2e_Marea",
+    Units = "GM/DAY",
+    Description = "sum over Marea of Average daily amount of carbon-dioxide equivalents produced by van transit vehicles in urbanized area in grams",
+    Summarize = list(
+      Expr = "sum(VanCO2e)",
+      Units = c(VanCO2e = "GM/DAY", Marea = ""),
+      Table = "Marea",
+      By = "Marea"
+    )
+  ),
+  Dvmt_Bzone = list(
+    Name = "Dvmt_Bzone",
+    Units = "MI/DAY",
+    Description = "sum over Bzone of Average daily vehicle miles traveled by the household in autos or light trucks",
+    Summarize = list(
+      Expr = "sum(Dvmt)",
+      Units = c(Dvmt = "MI/DAY", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    )
+  ),
+  Income_Bzone = list(
+    Name = "Income_Bzone",
+    Units = "USD",
+    Description = "sum over Bzone of Total annual household (non-qroup & group quarters) income",
+    Summarize = list(
+      Expr = "sum(Income)",
+      Units = c(Income = "USD", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    )
+  ),
+  OwnCost_Bzone = list(
+    Name = "OwnCost_Bzone",
+    Units = "USD",
+    Description = "sum over Bzone of Annual household vehicle ownership cost (depreciation,
+    finance,
+    insurance,
+    taxes) savings in dollars",
+    Summarize = list(
+      Expr = "sum(OwnCost)",
+      Units = c(OwnCost = "USD", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    )
+  ),
+  WalkTrips_Bzone = list(
+    Name = "WalkTrips_Bzone",
+    Units = "TRIP/YR",
+    Description = "sum over Bzone of Average number of walk trips per year by household members",
+    Summarize = list(
+      Expr = "sum(WalkTrips)",
+      Units = c(WalkTrips = "TRIP/YR", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    )
+  ),
+  VehicleTrips_Bzone = list(
+    Name = "VehicleTrips_Bzone",
+    Units = "TRIP/DAY",
+    Description = "sum over Bzone of Average number of vehicle trips per day by household members",
+    Summarize = list(
+      Expr = "sum(VehicleTrips)",
+      Units = c(VehicleTrips = "TRIP/DAY", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    )
+  ),
+  BikeTrips_Bzone = list(
+    Name = "BikeTrips_Bzone",
+    Units = "TRIP/YR",
+    Description = "sum over Bzone of Average number of bicycle trips per year by household members",
+    Summarize = list(
+      Expr = "sum(BikeTrips)",
+      Units = c(BikeTrips = "TRIP/YR", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    )
+  ),
+  TransitTrips_Bzone = list(
+    Name = "TransitTrips_Bzone",
+    Units = "TRIP/YR",
+    Description = "sum over Bzone of Average number of public transit trips per year by household members",
+    Summarize = list(
+      Expr = "sum(TransitTrips)",
+      Units = c(TransitTrips = "TRIP/YR", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    )
+  ),
+  DailyGGE_Bzone = list(
+    Name = "DailyGGE_Bzone",
+    Units = "GGE/DAY",
+    Description = "sum over Bzone of Gasoline equivalent gallons consumed per day by household vehicle travel",
+    Summarize = list(
+      Expr = "sum(DailyGGE)",
+      Units = c(DailyGGE = "GGE/DAY", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    )
+  ),
+  DailyKWH_Bzone = list(
+    Name = "DailyKWH_Bzone",
+    Units = "KWH/DAY",
+    Description = "sum over Bzone of Kilowatt-hours consumed per day by household vehicle travel",
+    Summarize = list(
+      Expr = "sum(DailyKWH)",
+      Units = c(DailyKWH = "KWH/DAY", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    )
+  ),
+  DailyCO2e_Bzone = list(
+    Name = "DailyCO2e_Bzone",
+    Units = "GM/DAY",
+    Description = "sum over Bzone of Grams of carbon-dioxide equivalents produced per day by household vehicle travel",
+    Summarize = list(
+      Expr = "sum(DailyCO2e)",
+      Units = c(DailyCO2e = "GM/DAY", Bzone = ""),
+      Table = "Household",
+      By = "Bzone"
+    ))
+)

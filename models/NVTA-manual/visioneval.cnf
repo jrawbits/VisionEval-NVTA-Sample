@@ -1,0 +1,27 @@
+Notes:
+- VisionEval.cnf for VERSPM (single stage)
+- Model Description: Model, Region, State
+- Scenario Description (single stage): Scenario, Description, BaseYear, Years
+
+# Model description
+Model          : NVTA - VERSPM
+Region         : NVTA
+State          : VA
+
+# Scenario description (using default or runtime Seed parameter)
+BaseYear       : 2019
+
+# Model Stages (separate base year run)
+ModelStages    :
+  "NVTA-base-year":
+    Scenario       : NVTA Base Year 2019
+    Description    : Base Year 2019
+    Years          : 2019
+    Reportable     : true
+  "NVTA-future-year":
+    StartFrom      : NVTA-base-year
+    Scenario       : VNTA Default 2045
+    Description    : Future Year 2019
+    Years          : 2045
+
+# See "scenarios" subdirectory for scenarios pivoting from "future-year"
