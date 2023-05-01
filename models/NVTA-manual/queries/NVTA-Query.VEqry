@@ -9,7 +9,8 @@ list(
       Units = c(UrbanHhDvmt = "MI/DAY", Marea = ""),
       Table = "Marea",
       By = "Marea"
-    )
+    ),
+    Priority = TRUE
   ),
   TownHhDvmt_Marea = list(
     Name = "TownHhDvmt_Marea",
@@ -20,7 +21,8 @@ list(
       Units = c(TownHhDvmt = "MI/DAY", Marea = ""),
       Table = "Marea",
       By = "Marea"
-    )
+    ),
+    Priority = TRUE
   ),
   RuralHhDvmt_Marea = list(
     Name = "RuralHhDvmt_Marea",
@@ -31,18 +33,15 @@ list(
       Units = c(RuralHhDvmt = "MI/DAY", Marea = ""),
       Table = "Marea",
       By = "Marea"
-    )
+    ),
+    Priority = TRUE
   ),
-  HvyTrkUrbanDvmt_Marea = list(
-    Name = "HvyTrkUrbanDvmt_Marea",
+  HhDvmt_Marea = list(
+    Name = "HhDvmt_Marea",
     Units = "MI/DAY",
-    Description = "sum over Marea of Heavy truck daily vehicle miles of travel on urbanized area roadways in the Marea",
-    Summarize = list(
-      Expr = "sum(HvyTrkUrbanDvmt)",
-      Units = c(HvyTrkUrbanDvmt = "MI/DAY", Marea = ""),
-      Table = "Marea",
-      By = "Marea"
-    )
+    Description = "sum over Marea of Average daily vehicle miles traveled by all households",
+    Function = "RuralHhDvmt_Marea+TownHhDvmt_Marea+UrbanHhDvmt_Marea",
+    Priority = TRUE
   ),
   ComSvcUrbanDvmt_Marea = list(
     Name = "ComSvcUrbanDvmt_Marea",
@@ -53,7 +52,8 @@ list(
       Units = c(ComSvcUrbanDvmt = "MI/DAY", Marea = ""),
       Table = "Marea",
       By = "Marea"
-    )
+    ),
+    Priority = TRUE
   ),
   ComSvcTownDvmt_Marea = list(
     Name = "ComSvcTownDvmt_Marea",
@@ -64,7 +64,8 @@ list(
       Units = c(ComSvcTownDvmt = "MI/DAY", Marea = ""),
       Table = "Marea",
       By = "Marea"
-    )
+    ),
+    Priority = TRUE
   ),
   ComSvcRuralDvmt_Marea = list(
     Name = "ComSvcRuralDvmt_Marea",

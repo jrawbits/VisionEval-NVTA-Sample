@@ -1,6 +1,7 @@
-# Run the development environment.
-# Could alter to set VE.home to any runtime installation
-# Then source VisionEval.R straight from that folder
+# Run VisionEval
+# Set VE_HOME in .Renviron to the directory containing the VisionEval
+# installation. Can be either enduser (from installer) or devleoper
+# (from Github)
 
 this.R <- paste(R.version[c("major","minor")],collapse=".")
 
@@ -13,10 +14,13 @@ this.R <- paste(R.version[c("major","minor")],collapse=".")
 #   VE_DEVELOPER=yes
 
 VE.home <- Sys.getenv("VE_HOME",unset=getwd()) # Where to look for runnable VisionEval
-VE.developer <- Sys.getenv("VE_DEVELOPER",unset="no")!="no"
+VE.developer <- file.exists(dev.dir<-file.path(VE.home,"build/VisionEval-dev.R"))
+if ( ! VE.developer && ! file.exists(file.path(VE.home,"VisionEval.R")) ) {
+  stop("Cannot locate VisionEval startup file in ",VE.home)
+}
 
 # VisionEval will run in VE_RUNTIME - generally leaving the default is preferred
-ve.runtime <- Sys.getenv("VE_RUNTIME",unset=getwd()) # can also set VE_RUNTIME somewhere else
+ve.runtime <- Sys.getenv("VE_RUNTIME",unset=getwd()) # can also set VE_RUNTIME in .Renviron
 Sys.setenv(VE_RUNTIME=ve.runtime)
 
 setwd(VE.home) # get ready to run the startup file
