@@ -29,6 +29,7 @@ local( {
       ve.run()
     }
   } else source("VisionEval.R")
+  invisible(NULL)
 })
 
 
