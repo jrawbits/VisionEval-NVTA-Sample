@@ -18,7 +18,7 @@ local( {
 
   setwd(VE.home) # get ready to run the startup file
   if ( VE.developer ) {
-    dev.lib <- file.path(VE.home,"/dev/lib",this.R)
+    dev.lib <- file.path(VE.home,"dev/lib",this.R)
     ve.lib  <- file.path(VE.home,"built/visioneval",this.R,"ve-lib")
     source("build/VisionEval-dev.R")
     if ( ! dir.exists(dev.lib) || ! dir.exists(ve.lib) ) {
